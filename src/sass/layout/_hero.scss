@@ -1,0 +1,222 @@
+.section-hero {
+    background-color: inherit;
+    padding: 60px 0 50px;
+    box-shadow: inset 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+    @media screen and (min-width: $tablet) {
+        padding: 60px 0 150px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 14px 0 50px;
+    }
+}
+
+.section-hero__wrraper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: column;
+        align-items: stretch;
+        align-content: space-between;
+        height: 580px;
+        justify-content: center;
+    }
+}
+
+.section-hero__box {
+    @media screen and (min-width: $desktop) {
+        width: 502px;
+    }
+}
+
+.section-hero__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2C2C2C;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $tablet) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 120%;
+        color: #2C2C2C;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: -14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;  
+        color: #2C2C2C;
+        margin-bottom: 28px;
+    }
+}
+
+.section-hero__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $tablet) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2C2C2C;
+        width: 336px;
+        margin-bottom: 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2C2C2C;
+        width: 100%;
+    }
+}
+
+.section-hero__text + .button-modal {
+    display: inline-flex;
+    background: #BBF330;
+    border: 0;
+    border-radius: 30px;
+    padding: 6px 18px;
+    @include transition-animation(background);
+
+    &:focus,
+    &:hover,
+    &:active {
+        background: #B5FF00;
+    }
+}
+
+.section-hero__slider {
+    display: none;
+    
+    @media screen and (min-width: $tablet) {
+        display: inline-block;
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border: 14px solid #FFE550;
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 580px;
+        height: 580px;
+        border: 26px solid #FFE550;
+        margin-right: 12px;
+    }
+
+    & .swiper {
+        border-radius: inherit;
+    }
+}
+
+.section-hero__list {
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.section-hero__item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-hero__button-left, 
+.section-hero__button-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(25%);
+    border: 0;
+    padding: 0;
+    width: 34px;
+    height: 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    color: #2C2C2C;
+    @include transition-animation(color box-shadow);
+
+    &:focus, 
+    &:hover {
+        color: #7EB101;
+    }
+
+    &:active {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    &.swiper-button-prev::after,
+    &.swiper-button-next::after {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        border-radius: 8px;
+        width: 48px;
+        height: 40px;
+    }
+}
+
+.section-hero__button-left {
+    left: -21px;
+    padding: 3px 13px 3px 9px;
+
+    @media screen and (min-width: $desktop) {
+        left: -39px;
+        padding: 5px 18px 5px 13px;
+    }
+}
+
+.section-hero__button-right {
+    right: -21px;
+    padding: 3px 9px 3px 13px;
+
+    @media screen and (min-width: $desktop) {
+        right: -39px;
+        padding: 5px 13px 5px 18px;
+    }
+}
+
+.section-hero__button-icon {
+    width: 12px;
+    height: 22px;
+    fill: currentColor;
+
+    @media screen and (min-width: $desktop) {
+        width: 17px;
+        height: 30px;
+    }
+}
