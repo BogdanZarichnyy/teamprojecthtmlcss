@@ -1,0 +1,39 @@
+.button-menu {
+    display: inline-flex;
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+    background: inherit;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.button-menu__image {
+    display: block;
+}
+
+.button-menu__icon {
+    display: block;
+}
+
+.button-modal {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: inline-flex;
+        background: #BBF330;
+        border: 0;
+        border-radius: 30px;
+        padding: 6px 18px;
+        @include transition-animation(background);
+
+        &:focus,
+        &:hover, 
+        &:active {
+            background: #B5FF00;
+        }
+    }
+}
