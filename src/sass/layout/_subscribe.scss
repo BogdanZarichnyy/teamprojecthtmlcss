@@ -8,8 +8,7 @@ margin-bottom: 17px;
 }
 
 .subscribe__image {
-    display: flex;
-    justify-content: center;    
+    margin: 0 auto 17px;
 }
 
 .subscribe__title {
@@ -101,11 +100,13 @@ margin-bottom: 17px;
     }
 
     .subscribe__thumb_image {
-        margin-bottom: 20px;
+        // display: flex;
+        // margin-bottom: 20px;
     }
 
     .subscribe__image {
-        justify-content: flex-end;
+        margin: 0;
+        margin-left: auto;
     }
     
     .subscribe__title {
@@ -148,6 +149,8 @@ margin-bottom: 17px;
     }
 
     .subscribe__thumb_image {
+        display: flex;
+        flex-direction: row-reverse;
         margin-bottom: 0;
     }
 }   

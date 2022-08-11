@@ -15,12 +15,12 @@
         // transform: transformX(0);
         transform: scale(1);
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 768px) {
             display: none;
         }
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 1280px) {
         display: none;
     }
 }

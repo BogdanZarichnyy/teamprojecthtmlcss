@@ -6,7 +6,7 @@
     background: inherit;
     cursor: pointer;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -22,7 +22,7 @@
 .button-modal {
     display: none;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: inline-flex;
         background: #BBF330;
         border: 0;

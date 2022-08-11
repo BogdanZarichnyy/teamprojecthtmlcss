@@ -3,7 +3,7 @@
     width: 71px;
     height: 52px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
     
         @include transition-animation(transform);
         

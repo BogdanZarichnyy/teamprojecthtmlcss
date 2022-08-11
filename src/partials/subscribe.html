@@ -1,31 +1,38 @@
 <section class="subscribe section">
-    <div class="container subscribe-container">
+    <div class="container">
         <div class="subscribe__thumb_image">
-            <picture class="subscribe__image">
-                <source
-                    srcset="./images/components/desktop/banandesktop(1x)_546.png 1x, ./images/components/desktop/banandesktop(2x)_1092.png 2x, ./images/components/desktop/banandesktop(3x)_1638.png 3x"
-                    media="(min-width: 1280px)">
+
+            <picture>
+                <source media="(min-width: 1280px)"
+                    srcset="./images/components/desktop/banandesktop(1x)_546.png 1x, 
+                            ./images/components/desktop/banandesktop(2x)_1092.png 2x, 
+                            ./images/components/desktop/banandesktop(3x)_1638.png 3x">
+                <source media="(min-width: 768px)" 
+                    srcset="./images/components/tablet/banantablet(1x)_281.png 1x, 
+                            ./images/components/tablet/banantablet(2x)_562.png 2x, 
+                            ./images/components/tablet/banantablet(3x)_843.png 3x">
             
-                <source
-                    srcset="./images/components/tablet/banantablet(1x)_281.png 1x, ./images/components/tablet/banantablet(2x)_562.png 2x, ./images/components/tablet/banantablet(3x)_843.png 3x"
-                    media="(min-width: 768px)">
-            
-                <source
-                    srcset="./images/components/mobile/bananmobile(1x)_161.png 1x, ./images/components/mobile/bananmobile(2x)_322.png 2x, ./images/components/mobile/bananmobile(3x)_483.png 3x"
-                    media="(min-width: 320px)">
-            
-                <img src="./images/components/mobile/bananmobile(1x)_161.png" alt="Banana">
-            
+                <source media="(min-width: 320px)" 
+                    srcset="./images/components/mobile/bananmobile(1x)_161.png 1x, 
+                            ./images/components/mobile/bananmobile(2x)_322.png 2x, 
+                            ./images/components/mobile/bananmobile(3x)_483.png 3x">
+                <img class="subscribe__image" src="./images/components/mobile/bananmobile(1x)_161.png" alt="Banana">
             </picture>
-        </div>
-        <div class="subscribe__thumb-content">
-            <h2 class="section-title subscribe__title">Subscribe To Get Special Offers</h2>
-            <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum tristique.</p>
-            <form class="subscribe-form">
-                <input type="email" name="email" id="email" class="subscribe-form__input" placeholder="Enter your email">
-                <button type="submit" class="subscribe-form__button">Sign Up</button>
-            </form>
+
+            <div class="subscribe__thumb-content">
+
+                <h2 class="section-title subscribe__title">Subscribe To Get Special Offers</h2>
+
+                <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros elementum tristique.</p>
+
+                <form class="subscribe-form">
+                    <input type="email" name="email" id="email" class="subscribe-form__input" placeholder="Enter your email">
+                    <button type="submit" class="subscribe-form__button">Sign Up</button>
+                </form>
+
+            </div>
+            
         </div>       
     </div>  
 </section>
