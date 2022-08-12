@@ -2,17 +2,12 @@
     position: absolute;
     right: 0;
     top: 50px;
-
-    // right: calc((100vw - $mobile-responsive) / 2 + 20px);
-    // transform: transformX(-16px);
-
     transform: scale(0);
     transform-origin: 100% 0;
     @include transition-animation(transform);
 
 
     &.is-open {
-        // transform: transformX(0);
         transform: scale(1);
 
         @media screen and (min-width: 768px) {

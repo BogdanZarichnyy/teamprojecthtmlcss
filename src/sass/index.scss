@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './utils/visually-hidden';
+@import './utils/utilities';
 
 @import './base/common';
 @import './base/container';
@@ -14,3 +14,4 @@
 @import './layout/customers';
 @import './layout/subscribe';
 @import './layout/footer';
+@import './layout/backdrop';

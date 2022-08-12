@@ -27,13 +27,14 @@
 .header__item {
     display: flex;
     margin-right: 28px;
-    padding: 18px 0;
+    // padding: 18px 0;
     border-radius: 10px;
     @include transition-animation(background-color);
 }
 
 .header__link {
     color: inherit;
+    padding: 18px 0;
     @include transition-animation(all);
 
     &:focus,

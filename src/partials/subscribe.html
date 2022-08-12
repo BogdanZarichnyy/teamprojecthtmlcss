@@ -1,7 +1,8 @@
-<section class="subscribe section">
+<section class="subscribe">
     <div class="container">
-        <div class="subscribe__thumb_image">
-
+        <div class="subscribe__thumb">
+            
+            <!-- Зображення банану -->
             <picture>
                 <source media="(min-width: 1280px)"
                     srcset="./images/components/desktop/banandesktop(1x)_546.png 1x, 
@@ -11,7 +12,6 @@
                     srcset="./images/components/tablet/banantablet(1x)_281.png 1x, 
                             ./images/components/tablet/banantablet(2x)_562.png 2x, 
                             ./images/components/tablet/banantablet(3x)_843.png 3x">
-            
                 <source media="(min-width: 320px)" 
                     srcset="./images/components/mobile/bananmobile(1x)_161.png 1x, 
                             ./images/components/mobile/bananmobile(2x)_322.png 2x, 
@@ -19,16 +19,24 @@
                 <img class="subscribe__image" src="./images/components/mobile/bananmobile(1x)_161.png" alt="Banana">
             </picture>
 
-            <div class="subscribe__thumb-content">
+            <div class="subscribe__content">
 
-                <h2 class="section-title subscribe__title">Subscribe To Get Special Offers</h2>
-
+                <!-- Заголовок секції -->
+                <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+                
+                <!-- Опис секції -->
                 <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                     eros elementum tristique.</p>
 
+                <!-- Форма -->
                 <form class="subscribe-form">
-                    <input type="email" name="email" id="email" class="subscribe-form__input" placeholder="Enter your email">
-                    <button type="submit" class="subscribe-form__button">Sign Up</button>
+
+                    <label class="visually-hidden" for="email">Enter your e-mail</label>
+
+                    <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="Enter your email">
+
+                    <button class="subscribe-form__button" type="submit">Sign Up</button>
+                    
                 </form>
 
             </div>

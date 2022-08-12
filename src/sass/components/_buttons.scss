@@ -27,7 +27,11 @@
         background: #BBF330;
         border: 0;
         border-radius: 30px;
-        padding: 6px 18px;
+        padding: 6px 18px 5px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
         @include transition-animation(background);
 
         &:focus,
