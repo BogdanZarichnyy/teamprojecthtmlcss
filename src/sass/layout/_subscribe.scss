@@ -1,6 +1,14 @@
 .subscribe {
-    background-color: #FEFEFE;
     padding-bottom: 60px;
+    margin-top: -39px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -83px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: -73px;
+    }
 }
 
 .subscribe__image {
