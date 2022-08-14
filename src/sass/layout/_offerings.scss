@@ -77,7 +77,7 @@
 .offerings__radialbox {
     width: 280px;
     height: 280px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
+    border: 3px solid var(--border-radial);
     border-radius: 50%;
     margin: 0 auto;
     padding: 9px;
@@ -100,32 +100,32 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffffff;
-}
+    background-color: var(--content-color);
+    user-select: none;
 
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 128px;
+        height: 44px;
+        left: 67px;
+        top: 185px;
+        background: radial-gradient(50% 50% at 50% 50%, var(--box-shadow-7) 0%, var(--box-shadow-8) 100%);
 
-.offerings__radialbox-images::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 128px;
-    height: 44px;
-    left: 67px;
-    top: 185px;
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+        @media screen and (min-width: 768px) {
+            width: 164px;
+            height: 57px;
+            left: 85px;
+            top: 236px;
+        }
 
-    @media screen and (min-width: 768px) {
-        width: 164px;
-        height: 57px;
-        left: 85px;
-        top: 236px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 252px;
-        height: 87px;
-        left: 131px;
-        top: 364px;
+        @media screen and (min-width: 1280px) {
+            width: 252px;
+            height: 87px;
+            left: 131px;
+            top: 364px;
+        }
     }
 }
 
@@ -166,7 +166,7 @@
     }
 }
 
- .offerings__radialbox-middle-image {
+.offerings__radialbox-middle-image {
     left: 370px;
     top: 62px;
 }
@@ -198,28 +198,31 @@
 }
 
 .offerings__title {
-    font-size: 28px;
-    line-height: 1.18;
-    margin-bottom:16px;
+    font-size: var(--header-fs);
+    line-height: var(--header-lh);
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
-        font-size: 42px;
-        line-height: 1.16;
+        font-size: var(--header-tablet-fs);
+        line-height: var(--modal-label-lh);
     }
 
     @media screen and (min-width: 1280px) {
-        font-size: 42px;
-        line-height: 1.19;
+        line-height: var(--header-desktop-lh);
     }
 }
 
 .offerings__text {
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: var(--general-fs);
+    line-height: var(--general-lh);
+
+    @media screen and (min-width: 768px) {
+        font-size: var(--text-fs);
+        line-height: var(--text-lh);
+    }
 
     @media screen and (min-width: 1280px) {
-        font-size: 15px;
-        line-height: 1.53;
+        line-height: var(--main-lh);
     }
 }
 
@@ -250,7 +253,7 @@
     &--touch::before {
         display: block;
         content: '';
-        background-color: #ffffff;
+        background-color: var(--primary-section-fon);
     
         width: 48px;
         height: 48px;
@@ -274,34 +277,22 @@
     }
 }
 
-// .offerings-advantage-item-icons {
-//     width: 48px;
-//     height: 48px;
-//     border-radius: 50%;
-//     background-color: #ffffff;
-//     margin-bottom: 8px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .offerings-advantage-item-icon {
-//     display: block;
-// }
-
 .offerings__item-title {
-    font-size: 18px;
-    line-height: 1.16;
+    font-size: var(--title-fs);
+    line-height: var(--modal-label-lh);
     margin-bottom: 16px;
 
     @media screen and (min-width: 1280px) {
+        font-size: var(--title-desktop-fs);
+        line-height: var(--title-lh);
         margin-bottom: 10px;
     }
 }
 
 .offerings__item-text {
-    font-size: 14px;
-    line-height: 1.14;
+    @media screen and (min-width: 1280px) {
+        line-height: var(--main-lh);
+    }
 }
 
 .offerings__footer {
@@ -311,13 +302,10 @@
 }
 
 .offerings__btn-modal {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    background: #FEFEFE;
+    line-height: var(--main-lh);
+    background: var(--content-color);
     padding: 8px 30px 7px;
-    border: 2px solid #7EB101;
+    border: 2px solid var(--hover-color);
     border-radius: 30px;
 
     @media screen and (min-width: 1280px) {
@@ -327,7 +315,7 @@
 
 .offerings__btn-modal:hover,
 .offerings__btn-modal:focus {
-    border: 2px solid #597D00;
+    border: 2px solid var(--active-color);
 }
 
 .offerings__link {
@@ -335,20 +323,20 @@
     align-items: center;
     font-size: 13.6667px;
     line-height: 1.47;
-    color: inherit;
+    color: var(--mobile-text-color);
     @include transition-animation(all);
 
     &:focus,
     &:hover {
-        color: rgba(105, 105, 105, 0.95);
+        color: var(--hover-text-color);
         text-shadow:
-            1px 0 2px #B5FF00,
-            -1px 0 2px #B5FF00,
-            1px 1px 2px #B5FF00,
-            -1px -1px 2px #B5FF00;
+            1px 0 2px var(--focus-color),
+            -1px 0 2px var(--focus-color),
+            1px 1px 2px var(--focus-color),
+            -1px -1px 2px var(--focus-color);
 
         & .offerings__icon {
-            fill: #597D00;
+            fill: var(--active-color);
         }
     }
 

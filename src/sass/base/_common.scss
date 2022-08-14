@@ -49,11 +49,11 @@ address {
 
 /*Фон сторінки та головний шрифт*/
 .body-general {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    background-color: #FEFEFE;
+    font-family: var(--general-ff);
+    font-weight: var(--general-fw);
+    font-size: var(--general-fs);
+    line-height: var(--general-lh);
+    background-color: var(--content-color);
     color: #2C2C2C;
 
     &::-webkit-scrollbar {

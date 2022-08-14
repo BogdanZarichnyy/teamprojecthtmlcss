@@ -8,12 +8,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 280px;
-
     text-align: center;
-
-    font-size: 28px;
-    line-height: 1.18;
-    color: #2c2c2c;
+    font-size: var(--header-fs);
+    line-height: var(--header-lh);
 }
 
 .favorites__text {
@@ -21,13 +18,7 @@
     margin-right: auto;
     margin-bottom: 60px;
     text-align: center;
-
     width: 280px;
-    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #2c2c2c;
 }
 
 .favorites__list {
@@ -39,18 +30,16 @@
 .favorites__item {
     margin-left: auto;
     margin-right: auto;
-
     padding: 17px;
     width: 280px;
     height: 282px;
-    border: 11px solid #FFE550;
+    border: 11px solid var(--input-color);
     border-radius: 50%;
-
     @include transition-animation(border);
     cursor: pointer;
 
     &:hover {
-        border-color: #bbf330;
+        border-color: var(--general-color);
     }
 
     @media screen and (max-width: 767px) {
@@ -74,15 +63,14 @@
 
     .favorites__title {
         width: auto;
-        font-size: 42px;
-        line-height: 1.17;
+        font-size: var(--header-tablet-fs);
+        line-height: var(--modal-label-lh);
     }
 
     .favorites__text {
         width: auto;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
+        font-size: var(--text-fs);
+        line-height: var(--text-lh);
     }
 
     .favorites__list {

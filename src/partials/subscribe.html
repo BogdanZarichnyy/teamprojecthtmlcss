@@ -22,7 +22,7 @@
             <div class="subscribe__content">
 
                 <!-- Заголовок секції -->
-                <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+                <h2 class="subscribe__title" id="contact">Subscribe To Get Special Offers</h2>
                 
                 <!-- Опис секції -->
                 <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -33,7 +33,18 @@
 
                     <label class="visually-hidden" for="email">Enter your e-mail</label>
 
-                    <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="Enter your email">
+                    <div class="subscribe-form__input-box">
+
+                        <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="Enter your email">
+                       
+                        <span class="subscribe-form__input-invalid">
+                            <svg class="subscribe-form__input-icon" width="12px" height="12px">
+                                <use href="/src/images/icons.svg#frame"></use>
+                            </svg>
+                            Not a valid email address (example@email.com)
+                        </span>
+
+                    </div>
 
                     <button class="subscribe-form__button" type="submit">Sign Up</button>
                     

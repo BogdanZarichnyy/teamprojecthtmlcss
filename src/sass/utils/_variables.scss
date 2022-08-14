@@ -1,98 +1,74 @@
 :root {
     /*Кольори для фону секцій*/
-    // --primary-section-fon: #2F303A;
-    // --secondary-section-fon: #F5F4FA;
-    // --social-fon: rgba(255, 255, 255, 0.1);
-    // --overlay-fon: rgba(33, 150, 243, 0.9);
+    --primary-section-fon: #FFFFFF;
 
     /*Кольори для контенту*/
     --content-color: #FEFEFE;
 
     /*Кольори рамок*/
-    // --border-header-color: #ECECEC;
-    // --border-content-color: #EEEEEE;
-    // --border-subscription-email: rgba(255, 255, 255, 0.3);
+    --input-color: #FFE550;
+    --invalid-color: #FF705D;
+    --border-radial: rgba(255, 255, 255, 0.5);
     --modal-form__input: rgba(33, 33, 33, 0.2);
 
     /*Кольори тексту*/
-    // --logo-color: #000000;
-    --text-color__primary: #2C2C2C;
-    --text-color__secondary: #505050;
-    // --footer-text-color: rgba(255, 255, 255, 0.6);
-    // --icon-social: #afb1b8;
-    // --modal-placeholder: rgba(117, 117, 117, 0.5);
+    --mobile-text-color: #000000;
+    --text-color-primary: #2C2C2C;
+    --text-color-secondary: #505050;
+    --hover-text-color: rgba(105, 105, 105, 0.95);
 
     /*Кольори блоків, ефектів ховера і фокусу*/
     --general-color: #BBF330;
     --focus-color: #B5FF00;
-    // --gradient-color-1: #104970;
-    // --gradient-color-2: #a9a9ad;
+    --hover-color: #7EB101;
+    --active-color: #597D00;
 
     /*Кольори тіней та затемнень*/
-    // --shadow-button: rgba(0, 0, 0, 0.25);
-    // --main-shadow-button: rgba(0, 0, 0, 0.15);
+    --button-shadow-color: rgba(0, 0, 0, 0.25);
+    --section-shadow: rgba(105, 105, 105, 0.1);
     --box-shadow-1: rgba(0, 0, 0, 0.12);
     --box-shadow-2: rgba(0, 0, 0, 0.14);
     --box-shadow-3: rgba(0, 0, 0, 0.2);
-    // --box-shadow-4: rgba(0, 0, 0, 0.1);
-    // --box-shadow-5: rgba(0, 0, 0, 0.8);
-    // --box-shadow-6: rgba(0, 0, 0, 0.06);
-    // --box-shadow-7: rgba(0, 0, 0, 0.16);
-    // --box-shadow-8: rgba(47, 48, 58, 0.4);
-    // --box-shadow-9: rgba(47, 48, 58, 0.8);
+    --box-shadow-4: rgba(0, 0, 0, 0.1);
+    --box-shadow-5: rgba(0, 0, 0, 0.06);
+    --box-shadow-6: rgba(0, 0, 0, 0.16);
+    --box-shadow-7: #2F583F;
+    --box-shadow-8: rgba(105, 105, 105, 0);
 
     /*Сімейство шрифтів*/
-    // --general-ff: #{'Roboto', sans-serif};
+    --general-ff: #{'Roboto', sans-serif};
     
     /*Вага шрифту*/
     --general-fw: 400;
-    // --unit-fw: 500;
-    // --header-fw: 700;
+    --unit-fw: 500;
+    --header-fw: 700;
 
     /*Розмір шрифту*/
-    --modal-label__font-size: 12px;
-    --general__font-size: 14px;
-    // --item__font-size: 16px;
-    // --title__font-size: 18px;
-    // --modal-title__font-size: 20px;
-    // --logo-tablet__font-size: 24px;
-    // --logo__font-size: 26px;
-    // --title-mobile__font-size: 28px;
-    // --mobile-contact__font-size: 34px;
-    // --section-title__font-size: 36px;
-    // --mobile-menu__font-size: 40px;
-    // --unit__font-size: 44px;
+    --information-fs: 10px;
+    --modal-label-fs: 12px;
+    --general-fs: 14px;
+    --text-fs: 16px;
+    --title-desktop-fs: 17px;
+    --title-fs: 18px;
+    --modal-title-fs: 20px;
+    --header-fs: 28px;
+    --header-tablet-fs: 42px;
+    --header-desktop-fs: 48px;
 
     /*Висота лінії шрифту*/
-    // --general__line-height: 1.14;
-    // --modal-title__line-height: 1.15;
-    // --section-title__line-height: 1.16;
-    --modal-label__line-height: 1.17;
-    // --title-mobile__line-height: 1.18;
-    // --item__line-height: 1.19;
-    // --logo-prefix__line-height: 1.2;
-    // --mobile-menu__line-height: 1.22;
-    // --subscription-input__line-height: 1.25;
-    // --unit__line-height: 1.36;
-    // --logo__line-height: 1.4;
-    // --title-modal__line-height: 1.5;
-    // --poster-title__line-height: 1.56;
-    // --unit-mobile__line-height: 1.62;
-    // --button-filter__line-height: 1.63;
-    --title__line-height: 1.71;
-    // --poster-category__line-height: 1.87;
-    // --button-order__line-height: 1.88;
-    // --poster-name__line-height: 2;
+    --general-lh: 1.14;
+    --modal-title-lh: 1.15;
+    --modal-label-lh: 1.17;
+    --header-lh: 1.18;
+    --text-lh: 1.19;
+    --information-lh: 1.2;
+    --title-modal-lh: 1.5;
+    --title-lh: 1.71;
+    --header-desktop-lh: 120%;
+    --title-lh: 140%;
+    --main-lh: 150%;
 
     /*Міжсимвольний інтервал*/
-    --modal-label__letter-spacing: 0.01em;
-    // --general__letter-spacing: 0.02em;
-    --title__letter-spacing: 0.03em;
-    // --unit__letter-spacing: 0.06em;
+    --modal-label-ls: 0.01em;
+    --title-ls: 0.03em;
 }
-
-// Brackpoints - точки перелому для адаптивної вестрки
-// $mobile-responsive: 320px;
-// $mobile: 480px;
-// $tablet: 768px;
-// $desktop: 1280px;

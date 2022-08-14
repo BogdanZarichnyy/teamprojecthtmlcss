@@ -1,7 +1,11 @@
 (() => {
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open]"),
+        openModalBtnHero: document.querySelector("[data-modal-open-hero]"),
+        openModalBtnOfferings: document.querySelector("[data-modal-open-offerings]"),
+
         closeModalBtn: document.querySelector("[data-modal-close]"),
+
         modal: document.querySelector("[data-modal]"),
         body: document.querySelector("[data-body]"), // це утилітка яка забороняє прокрутку контенту поза бекдропом при відкритому модальному вікні
         modalNameInput: document.getElementById("modal-name"), // це <input id="modal-name"> для першого поля input в формі модалки в HTML
@@ -10,6 +14,9 @@
 
     // refs.openModalBtn.addEventListener("click", toggleModal);
     refs.openModalBtn.addEventListener("click", toggleModalOpen); // виклик функції вікриття модалки
+    refs.openModalBtnHero.addEventListener("click", toggleModalOpen);
+    refs.openModalBtnOfferings.addEventListener("click", toggleModalOpen);
+    
     refs.closeModalBtn.addEventListener("click", toggleModalClose); // виклик функції закриття модалки
 
     function toggleModalOpen() {

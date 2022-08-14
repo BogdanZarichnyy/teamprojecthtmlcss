@@ -1,8 +1,6 @@
 .section-hero {
     background-color: transparent;
     padding: 60px 0 120px;
-    // z-index: -100;
-    // box-shadow: inset 0px 4px 24px rgba(105, 105, 105, 0.1);
 
     @media screen and (min-width: 768px) {
         padding: 60px 0 37px;
@@ -35,84 +33,52 @@
 }
 
 .section-hero__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    color: #2C2C2C;
+    font-size: var(--header-fs);
+    line-height: var(--header-lh);
     margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 120%;
-        color: #2C2C2C;
+        font-size: var(--header-tablet-fs);
+        line-height: var(--header-desktop-lh);
         width: 100%;
         max-width: 500px;
         margin-bottom: -14px;
     }
 
     @media screen and (min-width: 1280px) {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 120%;  
-        color: #2C2C2C;
+        font-size: var(--header-desktop-fs);
         margin-bottom: 28px;
     }
 }
 
 .section-hero__text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #2C2C2C;
+    line-height: var(--main-lh);
     margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #2C2C2C;
+        font-size: var(--text-fs);
         width: 336px;
         margin-bottom: 44px;
     }
 
     @media screen and (min-width: 1280px) {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #2C2C2C;
         width: 100%;
     }
 }
 
 .section-hero__text + .button-modal {
     display: inline-flex;
-    background: #BBF330;
+    background: var(--general-color);
     border: 0;
     border-radius: 30px;
     padding: 6px 18px 5px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+    line-height: var(--main-lh);
     @include transition-animation(background);
 
     &:focus,
     &:hover,
     &:active {
-        background: #B5FF00;
+        background: var(--focus-color);
     }
 }
 
@@ -124,7 +90,7 @@
         position: relative;
         width: 320px;
         height: 320px;
-        border: 14px solid #FFE550;
+        border: 14px solid var(--input-color);
         border-radius: 50%;
         margin-right: 6px;
     }
@@ -132,7 +98,7 @@
     @media screen and (min-width: 1280px) {
         width: 580px;
         height: 580px;
-        border: 26px solid #FFE550;
+        border: 26px solid var(--input-color);
         margin-right: 12px;
     }
 
@@ -142,7 +108,6 @@
 }
 
 .section-hero__list {
-    background: #FFFFFF;
     width: 100%;
     height: 100%;
 }
@@ -169,14 +134,14 @@
     padding: 0;
     width: 34px;
     height: 28px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    background: var(--content-color);
+    box-shadow: 0px 4px 4px var(--box-shadow-5);
     border-radius: 4px;
-    color: #2C2C2C;
+    color: var(--text-color-primary);
     @include transition-animation(color box-shadow);
 
     &:active {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 4px 4px var(--box-shadow-6);
     }
 
     @media screen and (min-width: 1280px) {
@@ -186,7 +151,7 @@
 
         &:focus,
         &:hover {
-            color: #7EB101;
+            color: var(--hover-color);
         }
     }
 }
